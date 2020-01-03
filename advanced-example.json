@@ -1,0 +1,15 @@
+{
+  "args": [
+    "-i", "$input",
+    "-c:v", "libx264",
+    "-c:a", "aac",
+    "-profile:v", "main",
+    "-b:v", "1200k", 
+    "-b:a", "64k",
+    "-filter_complex", "[0:a]showwaves=s=1280x720:mode=cline,format=yuv420p[b]; [0:v]scale=1280x720 [a]; [a][b] blend=all_opacity=0.5[v]",
+    "-map", "[v]",
+    "-map", "0:a",
+    "-f", "mp4", "$inputFilename-compressed.mp4",
+    "-y"
+  ]
+}
