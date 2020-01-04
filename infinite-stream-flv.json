@@ -4,6 +4,7 @@
     ["-i", "$input"],
     ["-c:v", "libx264"],
     ["-profile:v", "main"],
+    ["-preset", "ultrafast"],
     ["-c:a", "aac"],
     ["-f", "flv", "$outputUrl"]
   ]
