@@ -1,9 +1,12 @@
 {
+  "vars": {
+    "videoBitrate": "1000k"
+  },
   "args": [
     ["-re", "-stream_loop", "-1"],
     ["-i", "$input"],
     ["-c:v", "libx264"],
-    ["-b:v", "1000k"],
+    ["-b:v", "$videoBitrate"],
     ["-b:a", "64k"],
     ["-profile:v", "main"],
     ["-preset", "ultrafast"],
