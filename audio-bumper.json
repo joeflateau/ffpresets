@@ -1,12 +1,10 @@
 {
   "vars": {
-    "frontBumper":"$bumper",
-    "backBumper":"$bumper"
   },
   "args":[
-    ["-i", "$frontBumper"],
+    ["-i", "$bumper"],
     ["-i", "$input"],
-    ["-i", "$backBumper"],
+    ["-i", "$bumper"],
     ["-vn"],
     ["-filter_complex", "[0][1]acrossfade=d=10:c1=tri:c2=tri[a01]; [a01][2]acrossfade=d=10:c1=tri:c2=tri[a02]"],
     ["-f", "mp3", "$outFile.mp3"]
