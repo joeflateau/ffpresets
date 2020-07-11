@@ -8,7 +8,7 @@
     ["-i", "$input"],
     ["-i", "$bumper"],
     ["-vn"],
-    ["-filter_complex", "[0][1]acrossfade=d=10:c1=tri:c2=tri[a01]; [a01][2]acrossfade=d=10:c1=tri:c2=tri[a02]"],
+    ["-filter_complex", "[0][1]acrossfade=d=10:c1=tri:c2=tri[a01]; [a01][2]acrossfade=d=10:c1=tri:c2=tri"],
     ["-f", "mp3", "$outFile.mp3"]
   ]
 }
