@@ -1,5 +1,7 @@
 {
   "vars": {
+    "bumper":"",
+    "input":""
   },
   "args":[
     ["-i", "$bumper"],
