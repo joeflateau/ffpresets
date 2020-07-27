@@ -1,6 +1,7 @@
 {
   "vars": {
-    "videoBitrate": "1000k"
+    "videoBitrate": "1000k",
+    "muxer": "flv"
   },
   "args": [
     ["-re", "-stream_loop", "-1"],
@@ -11,6 +12,6 @@
     ["-profile:v", "main"],
     ["-preset", "ultrafast"],
     ["-c:a", "aac"],
-    ["-f", "flv", "$outputUrl"]
+    ["-f", "$muxer", "$outputUrl"]
   ]
 }
